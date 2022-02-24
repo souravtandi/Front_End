@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms example</title>
+</head>
+<body>
+    <h2>Studen Regrestration Form</h2>
+    <form action="any_backend_code">
+        <div>
+            <label for="st_name">Student name:</label>
+            <input id="st_name" type="text" name="st_name" id="" placeholder="Enter your name"> 
+        </div>
+        <br>
+        <div>
+            <label for="st_age">Student age:</label>
+            <input id="st_age" type="number" name="st_age" id="" placeholder="Enter your age">
+        </div>
+        <br>
+        <div>
+            <label for="st_email">Email:</label>
+             <input id="st_email" type="email" name="st_email" id="">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="st_gender" id="">
+                    Female <input type="radio" name="st_gender" id="">
+                    Other <input type="radio" name="st_gender" id="">
+        </div>
+        <br>
+        <div>
+            Are you 18 years old: <input type="checkbox" name="st_eligibility" id="">
+        </div>
+        <br>
+        <div>
+            Date of birth: <input type="date" name="st_dob">
+        </div>
+        <br>
+        <div>
+            Password: <input type="password" name="st_password">
+        </div>
+        <br>
+        <div>
+            Education description <br> <textarea name="st_edu_desc"  cols="60" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+           Qualificition
+           <select name="st_qualification">
+            <option value="graduate">graduate</option>
+            <option value="under_graduate">under_graduate</option>
+            <option value="12+">12+</option>
+            <option value="10+">10+</option>
+           </select>
+           </div>
+        <br>
+        <div>
+            Upload picture<input type="file" name="st_pic">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit form">
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset form">
+        </div>
+        
+        
+       
+
+
+    </form>
+    
+</body>
+</html>

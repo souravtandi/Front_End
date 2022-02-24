@@ -1,0 +1,29 @@
+.item{
+    border: 2px solid #c41d1d;
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+#item1{
+    position: relative;
+    background-color: red;
+    top: 20px;
+    z-index: -1;
+
+}
+#item2{
+    z-index: 5; /* z-index only works with the position: relative, absolute, fixed and sticky*/
+    position: relative;
+    background-color: blue;
+    top: -20px;
+    /*visibility: hidden; */ /* visibility hidden hides the element but occupies space*/
+     /* display: none; hides the element but removes the occupied space*/
+}
+#item3{
+    background-color: green;
+}
+#item4{
+    background-color: yellow;
+}

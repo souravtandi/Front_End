@@ -1,0 +1,41 @@
+body{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    
+}
+.res-heading-title{
+    color: rgb(102, 90, 209);
+    background-color: rgba(26, 107, 30, 0.336);
+    font-size: 22px;
+    border-radius: 5px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    
+
+}
+.site-font-bold{
+    font-style: italic;
+    font-weight: bold;
+}
+.menu-items{
+    color: deeppink;
+    background-color: dimgrey;
+    color: deeppink;
+    background-color: dimgrey;
+    padding: 0px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.8em ;
+    
+}
+.btn-orange{
+    color: white;
+    background-color: orange;
+    color: white;
+    background-color: orange;
+    height: 23px;
+    border: none;
+    border-radius 5px: ; 
+    font-weight: bold;
+}

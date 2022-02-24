@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Raleway:ital,wght@0,100;0,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    font-family:'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body{
+    background: #f7f3f3;
+}
+.heading{
+    text-align: center;
+    font-size: 36px;
+    padding: 22px 0px; /* padding y-axis = 22 and x-axis = 0px */
+    color: #0066ff;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* repeat each card, automatically calculate width, for each card minimum width is 240px and maximum width will automatically get calculateed */
+    grid-gap: 15px; /* apply 15px gap between the card on each side */
+    padding: 20px; /* padding around the container */
+}
+.card-container .card{
+    padding: 10px;
+    border: 3px solid #0066ff;
+    border-radius: 10px;
+    text-align: center;
+    background: white;
+    box-shadow: 5px 5px #0066ff;
+
+}
+.card-container .card .card-icon{
+    margin-top: 10px;
+}
+.card-container .card .card-icon span{
+    margin: 10px 0px; /* apply margin of 10px of y-axis and 0px on x-axis */
+    font-size: 32px;
+    color: #0066ff;
+}
+
+.card-container .card .card-title{
+    color: #0066ff;
+    font-size: 21px;
+    margin-top: 5px;
+}
+.card-container .card p{
+    font-size: 12px;
+    color: #6b6666;
+    padding: 10px;
+}
+.card-container .card a{
+    color: #0066ff;
+    text-decoration: none; /* removes underline */
+    display: block; /* making it block will make the anchor occupy the whole row width */
+    font-size: 18px;
+    padding: 10px 0px; /* padding y-axis 10px and x-axis 0px */
+
+}
+.card-container .card a:hover{
+    color: #243144;
+}

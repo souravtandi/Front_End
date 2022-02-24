@@ -1,0 +1,100 @@
+/* Alternative way of importing another style or css in your current css file, other options is to add it as link stylesheet in your html file*/
+/*@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Raleway:ital,wght@0,100;0,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* Apply below style to all elements in page*/
+
+*{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;/*avoids the box-model issue and makes sure the width of the container you provide does not get stretch if you add margin padding border to the container*/
+    outline: none;
+    border: none;
+    text-decoration: none; /* removes under line from anchor tag*/
+    text-transform: capitalize; /* make the first letter to be capital */
+    overflow: hidden; /* clip of the extra text which is going out of the box */
+    scroll-behavior: smooth; /* when scrolling will happen it should have smooth effect */
+}
+/* style the menu section*/
+.header{
+    position: fixed; /* it will make them menu fixed if you are scrolling down to the page */
+    top: 0;
+    left: 0;
+    right: 0;
+     /* background-color: rgb(220, 235, 18); */
+    height: 65px;
+    z-index: 100; /* header should be raised like a 3D view */
+}
+.header .nav-bar{
+    display: flex; /* making it flex container will help us to move item inside it*/
+
+}
+.header .nav-bar a{
+    flex: 1; /* every anchor tag should take equal space in the whole row */
+    text-align: center; /* align the text inside every anchor to horizontally center */
+    font-size: 22px;
+    line-height: 65px; /* space between two lines, also align element vertically center */
+    color: aliceblue;
+
+}
+/* apply pseudo selector hover and change the brightness */
+.header .nav-bar a:hover{
+    filter: brightness(0.8);
+}
+/* apply different background color on each anchor menu item */
+.header .nav-bar a:nth-child(1){
+    background: rgb(224, 70, 70);
+}
+.header .nav-bar a:nth-child(2){
+    background: rgb(70, 98, 224);
+}
+.header .nav-bar a:nth-child(3){
+    background: rgb(70, 224, 70);
+}
+.header .nav-bar a:nth-child(4){
+    background: rgb(224, 208, 70);
+}.header .nav-bar a:nth-child(5){
+    background: rgb(193, 70, 224);
+}
+
+/* style the main body section */
+.container{
+    display: flex;
+    width: 500%;
+    height: 100vh; /* this will occupy visible screen height */
+}
+.container .main-section{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center; /* aligns the content vertically center */
+    justify-content: center; /* aligns the content horizontally center */
+    font-size: 8vw; /* 8 of the total view width */
+    letter-spacing: 0.5rem; /* space between the letters in a word */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: azure;
+}
+
+.container .main-section:nth-child(1){
+    background: rgb(224, 70, 70);
+}
+.container .main-section:nth-child(2){
+    background: rgb(70, 98, 224);
+}
+.container .main-section:nth-child(3){
+    background: rgb(70, 224, 70);
+}
+.container .main-section:nth-child(4){
+    background: rgb(224, 208, 70);
+}.container .main-section:nth-child(5){
+    background: rgb(193, 70, 224);
+}
+
+/* Apply media queries to adjust styling for different devices = make it responsive */
+@media (max-width: 750px){
+    .header .nav-bar a span{
+        display: none; /* hide the menu text only show icon upto screen width of 750px */
+    }
+}
+
+

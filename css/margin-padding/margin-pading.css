@@ -1,0 +1,19 @@
+.container{
+    background-color: rosybrown;
+    border: 3px solid gold;
+    /*
+    padding-top: 67px;
+    padding-left: 56px;
+    padding-bottom: 89px;
+    padding-right: 78px;
+    */
+    /*padding: 47px 56px 78px 50px; */
+    /*padding: 5px 300px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    */
+    /*margin: 10px 20px 30px 40px; /*Clockwise direction style-top,right,bottom,left */
+    margin: 30px 40px; /*y-axis, x-axis*/
+}
